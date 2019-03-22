@@ -1,0 +1,24 @@
+<div class="nav_bar">
+  <img src="../../../assets/img/logo.png">
+  <ul class="list">
+      <li><a routerLink = 'products'>Home</a></li>
+      <li><a href="#" (click)="onDisplayDropDown()">About</a></li>
+      <div class="dropdown__body" [style.display]="isOpened2?'block':'none'" >
+        <ul class=" list" style="width: 80%">
+            <li class="list__item">
+                <a class="nav__inner-link"  (click)="onSelectedItem('pl')">Product Listing</a>
+            </li>
+            <li class="list__item">
+                <a class="nav__inner-link"  (click)="onSelectedItem('ap')">Add Product</a>
+            </li>
+        </ul>
+    </div>
+      <li><a routerLink = 'products/add'>Add product</a></li>
+      <li><a href="#">Sales</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Contact</a></li>
+  </ul>
+  <i class="fa fa-user-circle-o" style="font-size:24px"></i>
+  <i class="fa fa-shopping-bag" style="font-size:25px;" (click)="onDisplayCard()"></i>
+</div>
+<shopping-card [style.display]="isOpened?'block':'none'"></shopping-card>

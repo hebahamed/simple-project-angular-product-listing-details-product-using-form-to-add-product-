@@ -1,0 +1,21 @@
+<div class="item_card" >
+
+  <div class="img_div">
+      <img src="{{data.image}}">
+      <div class="opacity">
+           <button class="btn_details add_card">
+               <i class="fa fa-plus"></i>
+           </button>
+      </div>
+  </div>
+
+
+  <h3 [style.color]="'red'" [style.fontWeight]="'500'" >Price:{{data.price}}$</h3>
+  <h3>Sale:{{data.sale}}</h3>
+  <h3>Name:{{data.name}}</h3>
+  <h3>description:{{data.description}}</h3>
+  
+  
+
+  <button class="btn_details" [routerLink]="['/products/details' , data.id]">details</button>
+</div>

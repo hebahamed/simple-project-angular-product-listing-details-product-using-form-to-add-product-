@@ -1,0 +1,31 @@
+    .search
+    {   
+        margin:1.5rem auto;
+        margin-left: 20rem;
+        input 
+        {
+           border-radius: 20px;
+           border: 1px solid #e1e9ee;
+           padding: 0.8rem;
+           width: 30rem;
+           
+        }
+        input:focus
+        {
+            outline: none;
+            border: 1px solid #293c49;
+        }
+        .btn_search 
+        {
+            background-color: #323D45; 
+            border:  none;
+            padding: 0.5rem;
+            border-radius: 50%;
+            margin-left: -2.5rem;
+            i 
+            {
+                color: white;
+            }
+    
+        }
+    }

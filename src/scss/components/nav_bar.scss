@@ -1,0 +1,48 @@
+.nav_bar 
+{
+    display: flex;
+    justify-items: center;
+    background-color: white;
+    padding-left: 1rem;
+
+    .list
+    {
+        width: 70%;
+        display: inline-block;
+        list-style: none;
+        margin-top: 1.5rem;
+        margin: auto;
+
+        li
+        {
+            display: inline;
+            margin-left: 2.5rem;
+
+            a 
+            {
+                text-decoration: none;
+                font-family: Montserrat;
+                font-size: 15px;
+                // font-weight: 600;
+                color: #272525;
+            }
+            a:hover 
+            {
+                color: #E65540;
+                cursor: pointer;
+            }
+        }
+    }
+    i 
+    {
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+        color:#D2D7DA;
+    }
+    i:hover 
+    {
+        cursor: pointer;
+        color: #272525;
+    }
+}
+    

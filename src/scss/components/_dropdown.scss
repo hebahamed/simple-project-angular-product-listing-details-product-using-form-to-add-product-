@@ -1,0 +1,49 @@
+.dropdown
+{
+    position: relative;
+    &__header
+    {
+        color: $gray-400;
+    }
+    
+    &__body
+    {
+        position: absolute;
+        flex-direction: column;
+        z-index: 9999;
+        font-size: 15px;
+        background-color: white;
+        top: 4rem;
+        left: 20rem;
+        display: block;
+        box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.05);
+        min-width: 20rem;
+    }
+
+    &__item
+    {
+        display: flex;
+    }
+    
+    &__items
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    &--opened
+    {
+        .dropdown__body
+        {
+            display: flex;
+        }
+    }
+
+    &--left
+    {
+        >.dropdown__body
+        {
+            right: 0;
+        }
+    }
+}
